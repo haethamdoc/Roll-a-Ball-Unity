@@ -20,9 +20,7 @@ public class RollerBall : MonoBehaviour
         ballSpeed = 10.0f;
         ballRb = GetComponent<Rigidbody>();
         xInput = 0.0f;
-        zInput = 0.0f;
-         
-        
+        zInput = 0.0f; 
     } 
   
     void OnMove(InputValue movementValue)
