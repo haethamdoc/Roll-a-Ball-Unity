@@ -6,24 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 { 
- 
 
     public void GoToGame()
     {
         SceneManager.LoadScene("GameScene"); 
-    } 
+    }
 
-    void OnQuit(InputValue quitValue)
+    public void GoToMenu()
     {
-        Debug.Log("Hitting Quit Button");
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void QuitGame()
+    {
         Application.Quit();
     }
 
-    void OnMenu(InputValue mainMenuValue)
-    {
-        Debug.Log("Hitting Menu Button");
-        SceneManager.LoadScene("MainMenu");
-    }
+    //void OnQuit(InputValue quitValue)
+    //{
+    //    Debug.Log("Hitting Quit Button");
+    //    Application.Quit();
+    //}
+
+    //void OnMenu(InputValue mainMenuValue)
+    //{
+    //    Debug.Log("Hitting Menu Button");
+    //    SceneManager.LoadScene("MainMenu");
+    //}
 
 
 }
